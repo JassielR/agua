@@ -1,0 +1,96 @@
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagen/fondo.png);
+ }
+ p{
+    font-size: 12px;
+    
+ }
+ h1{
+    color:red;
+    text-align: center;
+    
+ }
+ h3,h4{
+    font-style: italic;
+    text-decoration: underline;
+    color:blue;
+    
+ }
+ #parrafo3{
+    font-weight: bold;
+ }
+ #parrafo5{
+    text-transform: uppercase;
+ }
+ .autor{
+    text-align:end;
+ }
+ #azul{
+    background-color: blue;
+    color:white;
+ }
+ #marco{
+    border:1px solid blue;
+    width: 90%;
+    margin:25px auto;
+    background-image: url(imagen/fondo3.jpg); /*alinear horizontamente un bloque a su padre*/
+    padding:15px
+ }
+ /*selector descendiente*/
+ .solido p{
+    color:red
+ }
+ .liquido p{
+    color:green;
+ }
+ .gaseoso>p{
+    border:1px solid grey;
+ }
+ .padre{
+    width:90%;
+    height: 200px;
+    border:1px solid gray;
+    margin:auto; /*alineacion horizontal*/
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-image: url(imagen/fondo4.png);
+    /*align-items:center;*/
+ }
+ .hijo{
+    width: 100px;
+    height: 50px;
+    background-color: #79C6F1;
+    margin:10px;
+    text-align: center;
+    align-content: center;
+ }
+ /*alineacion vertical a los hijos*/
+ .uno{
+    align-self: flex-start;
+ }
+ .dos{
+    align-self: center;
+ }
+ .tres{
+    align-self: flex-end;
+ }
+ /*formateando las imagenes*/
+ .estado img{
+    width:100%;
+    border:1px solid grey
+ }
+ #estados{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border:1px solid blue;
+    padding:5px
+ }
+ .estado{
+    width:30%;
+ }
+ #marco img{
+    max-width: 100%;
+ }
